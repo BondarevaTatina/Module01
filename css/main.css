@@ -1,0 +1,61 @@
+h1 {   
+    color: rgb(235, 138, 12);
+   border-bottom: 2px solid rgb(235, 138, 12);
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+   }
+   ul {
+    margin-left: 20px;
+    /* параметры рамки */
+    border: 1px solid #ffffff;
+    /* параметры тени: смещение по вертикали, по горизонтали, размытие, растяжение и цвет*/
+    box-shadow: 5px 5px 13px 0px rgba(154,116,168,0.5);
+    /* внутренние отступы по вертикали и горизонтали */
+    padding: 20px 30px;
+    width: max-content;
+   }
+   ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 60px;
+	padding: 15px 0 5px 0;
+	font-size: 16px;
+    
+}
+ol li {
+	position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+}
+
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: -7px;
+	left: -43px;
+	width: 50px;    
+	color: rgb(235, 138, 12);
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+ol li a {
+    color: black;
+    text-decoration: none;
+}
+.last {
+    color: rgb(114, 98, 9);
+    font-weight: bold;
+    font-size: 20px;
+}
+q {
+    border-bottom: 2px dotted rgb(235, 138, 12);
+    font-size: 26px;
+    color:  rgb(235, 138, 12);
+}
+
+
